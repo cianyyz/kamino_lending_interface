@@ -1860,7 +1860,7 @@ pub const UPDATE_RESERVE_CONFIG_IX_DISCM: [u8; 8] = [61, 148, 100, 70, 143, 107,
 #[cfg_attr(feature = "serde", derive(serde::Serialize, serde::Deserialize))]
 pub struct UpdateReserveConfigIxArgs {
     pub mode: u64,
-    pub value: bytes,
+    pub value: Vec<u8>,
     pub skip_validation: bool,
 }
 #[derive(Clone, Debug, PartialEq)]
